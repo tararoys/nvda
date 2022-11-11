@@ -16,6 +16,15 @@ nevada release:
     sleep(100ms)
     key(insert:down c insert:up)
 
+nevada copy paragraph:
+   mouse_click()
+   mouse_click()
+   mouse_click()
+   key(insert:down f2 insert:up) 
+   sleep(100ms)
+   key(ctrl-c)
+
+
 
 
 
