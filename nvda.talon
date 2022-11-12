@@ -22,6 +22,42 @@
     # If windows are already minimized, returns them to their original size.
     key(super-d)
 
+# Learn Nvda: Windows Basics Part Two https://www.youtube.com/watch?v=VV_ITMaiwhE
+
+#  the window 10 start menu has three panes.
+#  You use tab key to navigate between panes.
+#  Use the key combination shift-tab To go to the previous pane.
+#  Use the arrows keys to navigate within a pane.
+
+power (pane | menu):
+    # Opens the first pane of the start menu
+    # Contains accounts, settings, and power buttons.
+    key(super)
+    sleep(100ms)
+    key(tab)
+
+(application | program) (pane | menu):
+    # Opens the second pane of the start menu
+    # Contains a list of program files          
+    key(super)
+    sleep(200ms)
+    key(tab)
+    sleep(100ms)
+    key(tab)
+
+pinned program (pane | menu):
+    # Opens the third pain of the start menu.
+    # Contains a list of pinned programs
+    key(super)
+    sleep(200ms)
+    key(tab)
+    sleep(200ms)
+    key(tab)
+    sleep(200ms)
+    key(tab)    
+
+# Using the file explorer
+
 nevada hold:
     # Holds down the NVDA Key, which is the insert key.
     clip.set_text("insert key is down. Release with command nevada release")
